@@ -1,6 +1,5 @@
 import java.util.regex.*;
 
-
 public class Practice06Test {
 	
 	protected Queue<String> queue;
@@ -17,7 +16,7 @@ public class Practice06Test {
 	}
 	
 	
-	public void clearData() {
+	public void clearData() throws Exception{
 		while (!queue.empty()) {
 			queue.dequeue();
 		}
@@ -27,7 +26,7 @@ public class Practice06Test {
 	}
 	
 	
-	public boolean isPalindrome(String item) {
+	public boolean isPalindrome(String item) throws Exception{
 		clearData();
 		for (int i = 0; i < item.length(); i++) {
 			String substring = item.substring(i, i+1).toLowerCase();
